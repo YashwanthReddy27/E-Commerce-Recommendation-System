@@ -1,7 +1,8 @@
-# Product-Recommendation-System
+# Project Description
+This repository contains the implementation of a hybrid recommendation system for e-commerce platforms. It includes collaborative and content-based filtering techniques to provide personalized product recommendations based on user behavior and product features.
 ## Dataset
 The dataset contains products purchased from Amazon, productId, and UserId to scores, reviews, and summary
-# Data Exploration and cleaning
+## Data Exploration and cleaning
 ### Univariate Analysis
 The following have been computed for analysis
 1. Box plot for helpfulness numerator, which details the median, first quartile, third quartile, and maximum, including outliers.
