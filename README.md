@@ -23,6 +23,7 @@ At the same time, I analyzed the insight between the sentiment and score using t
 ### Recommendation Approach 
 <div align="justify">
 Instead of choosing an approach, I implemented both to check how the recommendation changes.
+  
 **1. Collaborative Filtering**
 + We use the Surprise library to implement this approach. The reader takes the score value range that the customer and the Dataset module gave expects three arguments: UserIDD, ProductID, and Score. The other metadata has been ignored as they are not directly used. Limited the samples to 50000 due to resource constraints.
 + The sim options take two arguments: the type of similarity you want to implement and whether you wish user-user/Item-Item collaborative filtering.
