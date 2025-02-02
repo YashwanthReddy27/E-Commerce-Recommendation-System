@@ -40,5 +40,5 @@ Instead of choosing an approach, I implemented both to check how the recommendat
 ## Predictions
 <div align="justify">
 Collaborative Filtering- This recommendation approach aims to give a score out of 5 when a user and product are provided. The output determines how well the user may like the product.
-Content-BasFilteringing- This recommendation approach aims to provide a list of products similar to the one passed as input.
+Content-Based Filtering- This recommendation approach aims to provide a list of products similar to the one passed as input.
 </div>
