@@ -31,7 +31,7 @@ Instead of choosing an approach, I implemented both to check how the recommendat
 + I implemented the KNNBasic algorithm, which finds the k most similar users based on a similarity metric. The rose metric was used to evaluate the accuracy, and this rose score(x) suggests that, on average, the predicted ratings deviate from actual ratings by approximately x on the rating scale (here, 1 to 5). 
 
 **2. Content-Based Filtering**
-+ Prepare the data to dot duplicates or na values, as TF-IDF can throw errors. Then, the text is converted to TF-IDF vectors, which convert the text into a numerical matrix representation.
++ Prepare the data to drop duplicates or na values, as TF-IDF can throw errors. Then, the text is converted to TF-IDF vectors, which convert the text into a numerical matrix representation.
 + Each term is weighed by its TF(Term frequency)-how often a term appears in the document and IDF(Inverse Document Frequency)- which reduces the weight of standard terms like “the,”  “is,” etc.
 + This creates a TFIDF matrix where the products are rows and columns with unique terms.
 + The algorithm we use here is Nearest neighbors and cosine similarity, as our goal is to get the patterns/trends.
