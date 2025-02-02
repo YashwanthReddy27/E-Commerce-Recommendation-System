@@ -25,9 +25,9 @@ At the same time, I analyzed the insight between the sentiment and score using t
 Instead of choosing an approach, I implemented both to check how the recommendation changes.
   
 **1. Collaborative Filtering**
-+ We use the Surprise library to implement this approach. The reader takes the score value range that the customer and the Dataset module gave expects three arguments: UserIDD, ProductID, and Score. The other metadata has been ignored as they are not directly used. Limited the samples to 50000 due to resource constraints.
++ We use the Surprise library to implement this approach. The reader takes the score value range that the customer and the Dataset module gave expects three arguments: UserID, ProductID, and Score. The other metadata has been ignored as they are not directly used. Limited the samples to 50000 due to resource constraints.
 + The sim options take two arguments: the type of similarity you want to implement and whether you wish user-user/Item-Item collaborative filtering.
-+ We used cosine Similarity and not pearson/mean sqaured metrics as cosine similarity measures the cosine of the angle between two vectors in context of ratings, this shows the evaluation whther the two users/items have similar rating patterns regarless of magnitude.
++ We used cosine Similarity and not Pearson/mean squared metrics, as cosine similarity measures the cosine of the angle between two vectors in the context of ratings; this shows the evaluation of whether the two users/items have similar rating patterns regardless of magnitude.
 + I implemented the KNNBasic algorithm, which finds the k most similar users based on a similarity metric. The rose metric was used to evaluate the accuracy, and this rose score(x) suggests that, on average, the predicted ratings deviate from actual ratings by approximately x on the rating scale (here, 1 to 5). 
 
 **2. Content-Based Filtering**
